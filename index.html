@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet"
+    >
+    <title>Electronic Urn</title>
+</head>
+<body>
+    <div id="urn">
+        <div class="top-urn">
+            <div class="screen">
+                <div class="screen-vote">
+                    <h1>Seu voto para:</h1>
+                    <h2>Vereador</h2>
+                    <input type="text" class="box">
+                    <input type="text" class="box">
+                    <input type="text" class="box">
+                    <input type="text" class="box">
+                    <input type="text" class="box">
+
+                    <img src="assets/images/daniel.jpg" alt="Daniel">
+
+                    <div class="profile">
+                        <h3>Nome: <b>Daniel</b></h3>
+                        <h3>Parido: PSD</h3>
+                    </div>
+                </div>
+                <div class="screen-end">
+                    <h1>FIM</h1>
+                </div>
+            </div>
+            <div class="inputs">
+                <div class="first-line">
+                    <button class="input-number" data-number="1">1</button>
+                    <button class="input-number" data-number="2">2</button>
+                    <button class="input-number" data-number="3">3</button>
+                </div>
+                <div class="second-line">
+                    <button class="input-number" data-number="4">4</button>
+                    <button class="input-number" data-number="5">5</button>
+                    <button class="input-number" data-number="6">6</button>
+                </div>
+                <div class="third-line">
+                    <button class="input-number" data-number="7">7</button>
+                    <button class="input-number" data-number="8">8</button>
+                    <button class="input-number" data-number="9">9</button>
+                </div>
+                <div class="fourth-line">
+                    <button class="input-number" data-number="0">0</button>
+                </div>
+            </div>
+        </div>        
+        <div class="confirm-buttons">
+            <input type="button" class="white" value="BRANCO"/>
+            <input type="button" class="corrects" disabled value="CORRIGE"/>
+            <input type="button" class="confirm" disabled value="CONFIRMAR"/>
+        </div>
+    </div>
+</body>
+<script src="assets//js/main.js"></script>
+</html>

@@ -10,28 +10,59 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
         rel="stylesheet"
     >
+    <link 
+        rel="icon" 
+        type="image/svg+xml" 
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23e76e6e%22></rect><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2270%22>📢</text></svg>"
+    />
     <title>Electronic Urn</title>
 </head>
 <body>
     <div id="urn">
         <div class="top-urn">
             <div class="screen">
-                <div class="screen-vote">
+                <div class="screen-vote" id="mayor">
                     <h1>Seu voto para:</h1>
-                    <h2>Vereador</h2>
-                    <input type="text" class="box">
-                    <input type="text" class="box">
-                    <input type="text" class="box">
-                    <input type="text" class="box">
-                    <input type="text" class="box">
+                    <h2>Prefeito</h2>
+                    
+                    <div class="box-mayor">
+                        <input type="text" class="box" readonly>
+                        <input type="text" class="box" readonly>
+                    </div>
 
-                    <img src="assets/images/daniel.jpg" alt="Daniel">
+                    <div class="white-vote-major hidden">
+                        <h1>VOTO EM BRANCO</h1>
+                    </div>
 
-                    <div class="profile">
-                        <h3>Nome: <b>Daniel</b></h3>
-                        <h3>Parido: PSD</h3>
+                    <div class="profile hidden">
+                        <h3 id="mayor-name"></h3>
+                        <h3 id="vice-mayor-name"></h3>
+                        <h3 id="mayor-partido"></h3>
                     </div>
                 </div>
+
+                <div class="screen-vote" id="city-councilor">
+                    <h1>Seu voto para:</h1>
+                    <h2>Vereador</h2>
+
+                    <div class="box-city-councilor">
+                        <input type="text" class="box" readonly>
+                        <input type="text" class="box" readonly>
+                        <input type="text" class="box" readonly>
+                        <input type="text" class="box" readonly>
+                        <input type="text" class="box" readonly>
+                    </div>
+
+                    <div class="white-vote-city-councilor hidden">
+                        <h1>VOTO EM BRANCO</h1>
+                    </div>
+
+                    <div class="profile">
+                        <h3 id="city-councilor-name"></h3>
+                        <h3 id="city-councilor-partido"></h3>
+                    </div>
+                </div>
+
                 <div class="screen-end">
                     <h1>FIM</h1>
                 </div>
@@ -64,5 +95,5 @@
         </div>
     </div>
 </body>
-<script src="assets//js/main.js"></script>
+<script type="module" src="assets/js/main.js"></script>
 </html>

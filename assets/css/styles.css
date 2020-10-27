@@ -6,6 +6,20 @@ body {
     align-items: center;
 
     width: 100vw;
+
+    margin-top: 10rem;
+}
+
+b {
+    font-weight: 700;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: unset;
 }
 
 #urn {
@@ -15,7 +29,6 @@ body {
     height: 20rem;
 
     border-radius: 0.7rem;
-    margin-top: 10rem;
 }
 
 #urn .top-urn {
@@ -42,7 +55,7 @@ body {
     color: #353434;
 
     margin-left: 1.5rem;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
 }
 
 #urn .top-urn .screen .screen-vote h2 {
@@ -71,32 +84,41 @@ body {
     margin-left: 1.5rem;
 }
 
-#urn .top-urn .screen .screen-vote img {
+#urn .top-urn .screen #city-councilor {
+    visibility: hidden;
+}
+
+#urn .top-urn .screen #city-councilor img {
     position: absolute;
     width: 6rem;
     height: 6rem;
 
-    margin-top: -7rem;
-    margin-left: 0.1rem;
+    margin-top: -12.3rem;
+    margin-left: 16.4rem;
 
     border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
 
-    visibility: hidden;
+#urn .top-urn .screen #mayor img {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+
+    margin-top: -13.5rem;
+    margin-left: 16.4rem;
+
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
 }
 
 #urn .top-urn .screen .screen-vote .profile {
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
     margin-left: 1.5rem;
-
-    visibility: hidden;
 }
 
 #urn .top-urn .screen .screen-vote .profile h3 {
     font: 1rem Roboto, sans-serif;
-}
-
-#urn .top-urn .screen .screen-vote .profile h3 b {
-    font-weight: 700;
 }
 
 #urn .top-urn .screen .screen-end {
@@ -164,6 +186,8 @@ body {
     height: 3rem;
 
     box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.25);
+
+    cursor: pointer;
 }
 
 #urn .confirm-buttons input:active {
